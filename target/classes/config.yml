@@ -1,0 +1,15 @@
+# Configurazione MobSpawner Plugin
+# Distanza in blocchi entro cui i mob vengono attivati quando un giocatore si avvicina
+activation-distance: 10.0
+
+# Intervallo di controllo per l'attivazione dei mob (in ticks, 20 ticks = 1 secondo)
+check-interval: 20
+
+# Messaggi del plugin
+messages:
+  spawner-created: "&aSpawner creato con successo! ID: &e{id}"
+  spawner-exists: "&cUno spawner con questo ID esiste già!"
+  invalid-mob: "&cMob MythicMobs non trovato: &e{mob}"
+  invalid-number: "&cNumero non valido: &e{number}"
+  no-permission: "&cNon hai il permesso per utilizzare questo comando!"
+  usage: "&cUso: /setmob <id> <mobName> <quantity>"

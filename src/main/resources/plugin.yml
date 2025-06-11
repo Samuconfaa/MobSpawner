@@ -1,0 +1,33 @@
+name: MobSpawner
+version: 1.0.0
+main: it.samuconfaa.mobSpawner.MobSpawner
+api-version: 1.21
+author: SamuConfaa
+description: Plugin per creare spawner personalizzati con MythicMobs
+website: https://github.com/samuconfaa/mobspawner
+
+depend:
+  - MythicMobs
+
+commands:
+  setmob:
+    description: Crea un nuovo spawner di mob
+    usage: /setmob <id> <mobName> <quantity>
+    permission: mobspawner.setmob
+    permission-message: Non hai il permesso per utilizzare questo comando!
+
+permissions:
+  mobspawner.*:
+    description: Accesso completo al plugin MobSpawner
+    default: op
+    children:
+      mobspawner.setmob: true
+      mobspawner.admin: true
+
+  mobspawner.setmob:
+    description: Permesso per creare spawner
+    default: op
+
+  mobspawner.admin:
+    description: Permesso per amministrare gli spawner
+    default: op
