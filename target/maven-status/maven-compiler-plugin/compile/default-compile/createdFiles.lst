@@ -2,5 +2,6 @@ it\samuconfaa\mobSpawner\MobSpawner.class
 it\samuconfaa\mobSpawner\PlayerMoveListener.class
 it\samuconfaa\mobSpawner\ConfigManager.class
 it\samuconfaa\mobSpawner\SpawnerManager.class
+it\samuconfaa\mobSpawner\DeleteSpawnerCommand.class
 it\samuconfaa\mobSpawner\SetMobCommand.class
 it\samuconfaa\mobSpawner\SpawnerData.class

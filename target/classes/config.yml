@@ -13,3 +13,10 @@ messages:
   invalid-number: "&cNumero non valido: &e{number}"
   no-permission: "&cNon hai il permesso per utilizzare questo comando!"
   usage: "&cUso: /setmob <id> <mobName> <quantity>"
+
+  # Messaggi per eliminazione spawner
+  delete-usage: "&cUso: /deletespawner <id>"
+  spawner-not-found: "&cSpawner non trovato: &e{id}"
+  spawner-deleted: "&aSpawner eliminato con successo! ID: &e{id}"
+  delete-failed: "&cErrore nell'eliminazione dello spawner: &e{id}"
+  not-spawner-owner: "&cPuoi eliminare solo i tuoi spawner!"

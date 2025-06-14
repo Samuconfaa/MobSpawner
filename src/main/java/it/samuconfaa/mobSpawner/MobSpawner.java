@@ -32,6 +32,7 @@ public class MobSpawner extends JavaPlugin {
 
         // Registra comandi
         getCommand("setmob").setExecutor(new SetMobCommand(this));
+        getCommand("deletespawner").setExecutor(new DeleteSpawnerCommand(this)); // NUOVO COMANDO
 
         // Registra listeners
         Bukkit.getPluginManager().registerEvents(new PlayerMoveListener(this), this);

@@ -16,18 +16,29 @@ commands:
     permission: mobspawner.setmob
     permission-message: Non hai il permesso per utilizzare questo comando!
 
+  deletespawner:
+    description: Elimina uno spawner esistente
+    usage: /deletespawner <id>
+    permission: mobspawner.delete
+    permission-message: Non hai il permesso per utilizzare questo comando!
+
 permissions:
   mobspawner.*:
     description: Accesso completo al plugin MobSpawner
     default: op
     children:
       mobspawner.setmob: true
+      mobspawner.delete: true
       mobspawner.admin: true
 
   mobspawner.setmob:
     description: Permesso per creare spawner
     default: op
 
+  mobspawner.delete:
+    description: Permesso per eliminare i propri spawner
+    default: op
+
   mobspawner.admin:
-    description: Permesso per amministrare gli spawner
+    description: Permesso per amministrare tutti gli spawner
     default: op

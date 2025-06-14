@@ -51,6 +51,27 @@ public class ConfigManager {
             config.set("messages.usage", "&cUso: /setmob <id> <mobName> <quantity>");
         }
 
+        // NUOVI MESSAGGI PER DELETE
+        if (!config.contains("messages.delete-usage")) {
+            config.set("messages.delete-usage", "&cUso: /deletespawner <id>");
+        }
+
+        if (!config.contains("messages.spawner-not-found")) {
+            config.set("messages.spawner-not-found", "&cSpawner non trovato: &e{id}");
+        }
+
+        if (!config.contains("messages.spawner-deleted")) {
+            config.set("messages.spawner-deleted", "&aSpawner eliminato con successo! ID: &e{id}");
+        }
+
+        if (!config.contains("messages.delete-failed")) {
+            config.set("messages.delete-failed", "&cErrore nell'eliminazione dello spawner: &e{id}");
+        }
+
+        if (!config.contains("messages.not-spawner-owner")) {
+            config.set("messages.not-spawner-owner", "&cPuoi eliminare solo i tuoi spawner!");
+        }
+
         plugin.saveConfig();
     }
 

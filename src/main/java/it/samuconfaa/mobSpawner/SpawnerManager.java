@@ -63,7 +63,10 @@ public class SpawnerManager {
         SpawnerData spawner = new SpawnerData(id, mobName, location, maxMobs, creatorUUID);
         spawners.put(id, spawner);
 
-        plugin.getLogger().info("Spawner creato: " + spawner.toString());
+        // AGGIUNTO: Salva immediatamente nel file YAML
+        saveSpawners();
+
+        plugin.getLogger().info("Spawner creato e salvato: " + spawner.toString());
         return true;
     }
 
@@ -156,7 +159,13 @@ public class SpawnerManager {
      */
     public boolean removeSpawner(String id) {
         SpawnerData removed = spawners.remove(id);
-        return removed != null;
+        if (removed != null) {
+            // Salva immediatamente dopo la rimozione
+            saveSpawners();
+            plugin.getLogger().info("Spawner rimosso e salvato: " + id);
+            return true;
+        }
+        return false;
     }
 
     /**
